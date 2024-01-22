@@ -1,0 +1,115 @@
+/****** generic classes*******/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Archivo, sans-serif;
+    color: #000;
+}
+
+a {
+    /*Con el inherit le decimos que coja el color que le pertoca por herencia más cercano de la cascada.*/
+    color: inherit;
+}
+
+/****** header *******/
+header figure {
+    float: left;
+    margin: 27px 0 0 108px;
+    width: 232px;
+}
+
+header figure img {
+    width: 100%;
+}
+
+header nav.header__menuUsuario {
+    float: right;
+    margin: 42px 111px 0 0;
+}
+
+/*Esta mierda es para los floats que yano se usa con los flex y grids*/
+.header__wrapper:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+/****** nav menu *******/
+nav ul {
+    list-style: none;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    font-size: 0.75em;
+}
+
+/*El nav es opcional y es para facilitar la organización */
+nav.header__menuUsuario {
+    text-align: center;
+}
+
+nav.header__menuPrincipal{
+    clear: both;
+    margin: 20px 0 0 140px;
+}
+nav.header__menuPrincipal li{
+    background-color: #00FFD1;
+    padding: 9px 10px;
+    text-transform: uppercase;
+}
+
+
+/****** main content *******/
+main{
+    margin: 75px 0 0 0;
+}
+
+article{
+    margin: 0 0 37px 0;
+}
+
+
+article img{
+    width: 100%;
+}
+
+/****** footer *******/
+
+footer{
+    border-top: 2px solid #c5c5c5;
+    margin: 96px 0;
+}
+
+footer figure{
+    margin: 29px 0 0 140px;
+    float: left;
+}
+
+footer figure p{
+    color: #393939;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.footer__menuCentral{
+    float: right;
+    margin: 55px 0 0;
+}
+
+.footer__menuDerecha{
+    float: right;
+    margin: 55px 80px 0;
+}
+
+/*Esta mierda es para los floats que yano se usa con los flex y grids*/
+footer:after{
+    content: "";
+    display: table;
+    clear:both;
+}
