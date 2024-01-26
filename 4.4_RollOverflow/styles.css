@@ -1,3 +1,7 @@
-*{
-    color: red;
+.content-box{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
