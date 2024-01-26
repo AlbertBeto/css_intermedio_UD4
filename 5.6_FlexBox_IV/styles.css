@@ -9,8 +9,7 @@ header{
     color: #fff;
     display: flex;
     flex-direction: column;
-    font-family: Arial;
-    
+    font-family: Arial;  
 }
 
 header h1{
@@ -26,9 +25,7 @@ header nav{
 header nav ul li {
     list-style-type: none;
     padding: 15px 8px ;
-    
     display: inline-block;
-     
 }
 
 header nav ul li a{
