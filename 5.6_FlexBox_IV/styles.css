@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: blue;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    
+}
+
+header h1{
+    font-size: medium;
+    padding: 15px 15px;
+    align-self: center;
+}
+
+header nav{
+    align-self: center;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 15px 8px ;
+    
+    display: inline-block;
+     
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
