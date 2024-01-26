@@ -31,11 +31,21 @@ main{
     flex-wrap: wrap;   
     justify-content: space-between;
 }
+.content-area{
+    margin: 15px;
+}
 
+.main-content{
+    background-color: lightgrey;
+    width: 70%;
+    padding: 20px;
+}
 
-
-
-
+aside{
+    background-color: gray;
+    width: 30%;
+    padding: 20px;
+}
 
 footer{
     width: 100%;
@@ -46,4 +56,10 @@ footer{
 footer p{
     color: #fff;
     text-align: center;
+}
+
+@media screen and (max-width: 769px){
+    main{flex-direction: column;}
+    .main-content{ width: 100%;}
+    aside{width: 100%;}
 }
