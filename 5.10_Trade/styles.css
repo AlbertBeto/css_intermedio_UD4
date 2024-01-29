@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.container-center {
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+align-items: center;
+}
+
+.container-center h1{
+    font-size: 1.2em;
+    
+}
+
+.container-center nav {
+    float: right;
+    font-size: 0.7em;
+}
+
+.container-center nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.container-center nav button{
+    background-color: lightgrey;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: 1px black solid;
+    font-size: 0.8em;
+    margin: 0px 5px;
+}
+
+.container-center nav .mini-button{
+    visibility: collapse;
+}
+
+.cta{
+    width: 100%;
+    background-color: rgb(188, 188, 188);
+    text-align: center;
+    padding: 20px 0px 80px 0px;
+}
+.cta h2{
+    padding-bottom: 15px;
+}
+
+.cta p{
+    padding-bottom: 25px;
+}
+.cta button{
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 6px;
+    font-size: 0.6em;
+    color: white;
+    border: none;
+}
+
+.newsletter{
+    width: 100%;
+    background-color: lightgrey;
+    padding: 50px;
+}
+.news-container{
+    text-align: center;
+    max-width: 425px;
+    background-color: white;
+    border: 1px solid gray ;
+    border-radius: 5px;
+    padding: 25px;
+    
+}
+.news-container form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+.news-container form label{
+    margin: 5px 0px;
+}
+.news-container form input{
+    margin: 5px 0px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    height: 30px;
+}
+.news-container form #form-button{
+    border: none;
+    background-color: black;
+    color: white;
+    
+}
