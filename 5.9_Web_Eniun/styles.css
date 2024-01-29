@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background-color: #f7f9fa;
+    align-content: center;
+}
+
+header nav{
+    max-width: 1024px;
+    display: flex;
+    
+    justify-content: space-between;
+    
+}
+
+header img{
+    margin: 18px 100px;
+}
+
+header nav ul{
+    float: right;
+}
+
+header nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+    line-height: 70px;
+    padding: 26px 10px;
+}
+
+header nav ul li a:hover{
+    color: #5e5d6e;
+}
+
+body{
+    padding-top: 70px;
+}
+
+.parallax {
+    background-image: url("https://www.eniun.com/wp-content/uploads/eniun-home-historia.jpg");
+    height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .parallax img{
+    max-width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+
+  .parallax h1{
+    visibility: hidden;
+  }
+
+  #btn-fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .fa-whastsapp{
+    color: green;
+    font-size: 3em;
+  }
+
+  .call-to-action{
+    max-width: 700px;
+    margin: 150px auto;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .big{
+    font-size: 1.1em;
+    line-height: 1.5em; 
+  }
+
+.call-to-action h2, .call-to-action p, .call-to-action button{
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 15px 40px;
+    background-color: black;
+    font-size: 1em;
+    color: white;
+    transition: background 0.5s linear;
+    -webkit-transition: background 1s linear;
+    
+}
+
+button:hover{
+    color: #4a4959;
+    cursor: pointer;
+}
+
+
+
+.info-box{
+    background-color: #1c1d22;
+    text-align: center;
+    color: white;
+    padding: 110px 0px;
+    
+    margin-bottom: 25px;
+}
+
+.info-box h2{
+    margin-bottom: 30px;
+}
+#flex-p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#flex-p p{
+    padding: 30px;
+    max-width: 300px;
+}
+
+.description-box{
+    padding: 25px 0px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.description-box h2{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;  
+}
+
+.img-container img{
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+.img-container p{    
+    max-width: 400px;
+    font-size: 0.96em;
+    text-align: justify;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #1c1d22;
+    color: white;
+}
