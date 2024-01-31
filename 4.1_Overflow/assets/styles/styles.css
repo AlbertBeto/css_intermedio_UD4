@@ -1,0 +1,17 @@
+.caja{
+    border: 2px solid black;
+    width: 150px;
+    height: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;   
+}
+
+.caja:hover{
+    overflow-x: visible;
+    overflow-y: visible;
+    width: fit-content;
+    height: fit-content;
+    max-width: 600px;
+    white-space: normal;
+}
