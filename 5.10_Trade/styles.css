@@ -13,32 +13,32 @@ header {
     background-color: lightgrey;
 }
 
-.container-center {
+header .container-center {
     width: 100%;
     top: 0px;
     display: flex;
     justify-content: space-around;
     height: 50px;
-align-items: center;
+    align-items: center;
 }
 
-.container-center h1{
+header .container-center h1{
     font-size: 1.2em;
     
 }
 
-.container-center nav {
+header .container-center nav {
     float: right;
     font-size: 0.7em;
 }
 
-.container-center nav a{
+header .container-center nav a{
     text-decoration: none;
     color: black;
     padding: 10px;
 }
 
-.container-center nav button{
+header .container-center nav button{
     background-color: lightgrey;
     cursor: pointer;
     border-radius: 5px;
@@ -48,8 +48,9 @@ align-items: center;
     margin: 0px 5px;
 }
 
-.container-center nav .mini-button{
-    visibility: collapse;
+header .container-center nav .mini-button{
+    display: none;
+    float: right;
 }
 
 .cta{
@@ -79,9 +80,13 @@ align-items: center;
     width: 100%;
     background-color: lightgrey;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .news-container{
-    text-align: center;
+    
     max-width: 425px;
     background-color: white;
     border: 1px solid gray ;
@@ -108,5 +113,54 @@ align-items: center;
     border: none;
     background-color: black;
     color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+footer .container-center{
     
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+footer .container-center section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+}
+footer .container-center section h2,footer .container-center section h3{
+    margin-bottom: 20px;
+}
+
+footer .container-center section a, footer .container-center section p{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    
+    display: block;
+}
+
+@media (max-width: 800px){
+    
+header .container-center nav .mini-button{
+    display: block;;
+    
+}
+header .container-center nav a{
+    display: none;
+}
+header .container-center nav button{
+    display: none;
+}
+footer .container-center{
+    flex-direction: column;
+}
+footer .container-center section {
+    width: 100%;
+}
 }
